@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Poppins', serif; 
+}
+header{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    position: fixed; 
+    justify-content: space-between;
+    transition: all 0.5s;
+    background-image: linear-gradient(to right, #1c313d, #19435e ); 
+    z-index: 3; 
+    
+}
+.header-logo a{
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;  
+}
+.header-logo a span{
+    color: #3084b4;
+    font-size: 21px;  
+}
+.header-options-list{
+    display: flex;
+    margin-left: 40px;
+    gap: 30px;
+}
+.header-options-list-item{
+    list-style: none;
+}
+.header-options-list-item a {
+    text-decoration: none;
+}
+.header-itens-first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    font-family: 'Poppins', serif;   
+}
+.header-itens-second{
+    margin-right: 30px;
+    font-family: 'Poppins', serif;  
+}
+.header-itens-first a, 
+.header-itens-second a{
+    color: #f0f0f0;
+    font-size: 17px;
+}
+.header-options-list-item a:hover{
+    border-bottom: 2px solid #3084b4;
+    color: #e9e8e8;
+}
+.menu-hamburguer{
+    cursor: pointer;
+    display: none;
+}
+.menu-hamburguer .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #000;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+main{
+   margin-top: 0;
+   padding-top: 6rem; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.initial-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.initial-img h1{
+    z-index: 1;
+    position: relative;
+    bottom: 270px;
+    color: #ffffff;
+    font-family: 'Poppins', serif;  
+    width: 700px;
+    font-size: 25px;
+    font-weight: 900;
+    text-shadow: 2px 1px 2px #19435e;
+}
+.initial-img img{
+    border-radius: 11px;
+    width: 95%;
+    height: 400px;
+    z-index: 0;
+}
+.barra-pesquisa-localizacao{
+    display: flex;
+    position: relative;
+    bottom: 230px;
+    
+}
+.barra-pesquisa-localizacao i{
+    color: #ffffff;
+    background-color: #1c313d;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.barra-pesquisa-localizacao i:hover{
+    background-color: #19435e;
+}
+.barra-pesquisa-localizacao input{
+    width: 500px;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 18px;
+    font-size: 18px;
+    font-family: 'Poppins', serif; 
+}
+.barra-pesquisa-localizacao input::placeholder{
+    font-family: 'Poppins', serif;  
+    font-size: 17px;
+    font-weight: 600;
+}
+.explore-homes{
+    display: flex;
+    justify-content: center;
+    margin-top: -35px;
+    flex-direction: column;
+    align-items: center;
+}
+.explore-homes p{
+    width: 560px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

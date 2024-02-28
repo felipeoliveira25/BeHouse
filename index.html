@@ -4,25 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BeHouse</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="shortcut icon" type="imagex/png" href="./images/home_FILL0_wght400_GRAD0_opsz24.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <section class="header-itens-first"> <!--Seção para os itens da esquerda do header-->
+        <section class="header-itens-first" id="inicio"> <!--Seção para os itens da esquerda do header-->
             <section class="header-logo"><!--Seção para a logo da loja-->
                 <a href="index.html"><span>Be</span>House</a>
             </section>
             <section class="header-options"><!--Seção para os três primeiros itens da barra de navegação-->
                 <ul class="header-options-list">
-                    <li class="header-options-list-item">
-                        <a href="">Buy</a>
+                    <li class="header-options-list-item dropdown">
+                        <a href="#explore-buy" class="link-navbar">Buy</a>
+
+                        <div class="dropdown-menu">
+                            <p><span>Recife - PE</span></p>
+                            <a href="#">Buy 1</a>
+                            <a href="#">Buy 2</a>
+                            <a href="#">Buy3 </a>
+                        </div>
                     </li>
-                    <li class="header-options-list-item">
-                        <a href="">Rent</a>
+                    <li class="header-options-list-item dropdown">
+                        <a href="" class="link-navbar">Rent</a>
+
+                        <div class="dropdown-menu">
+                            <p><span>Recife - PE</span></p>
+                            <a href="#">Rent 1</a>
+                            <a href="#">Rent 2</a>
+                            <a href="#">Rent 3 </a>
+                        </div>
                     </li>
-                    <li class="header-options-list-item">
-                        <a href="#">Sold</a>
+                    <li class="header-options-list-item dropdown">
+                        <a href="#" class="link-navbar">Sold</a>
+
+                        <div class="dropdown-menu">
+                            <p><span>Recife - PE</span></p>
+                            <a href="#">Sold 1</a>
+                            <a href="#">Sold 2</a>
+                            <a href="#">Sold 3 </a>
+                        </div>
                     </li>
                 </ul>
             </section>
@@ -32,13 +54,13 @@
             <section class="header-options"> <!--Seção para os três últimos itens da barra de navegação-->
                 <ul class="header-options-list">
                     <li class="header-options-list-item">
-                        <a href="">Saved Homes</a>
+                        <a href="" class="link-navbar">Saved Homes</a>
                     </li>
                     <li class="header-options-list-item">
-                        <a href="">My Homes</a>
+                        <a href="" class="link-navbar add">Add Home</a>
                     </li>
                     <li class="header-options-list-item">
-                        <a href=""><i class="fa-regular fa-user"></i></a>
+                        <a href="" class="link-navbar"><i class="fa-regular fa-user"></i></a>
                     </li>
                 </ul>
             </section>
@@ -62,15 +84,53 @@
        </section>
        
        <!--Parte para explorar as casas presentes no site-->
-       <section class="explore-homes">
+       <section class="explore-homes" id="explore-buy" >
             <h2>Explore homes on BeHouse</h2>
             <p>Take a deep dive and browse homes for sale, original neighborhood photos, resident reviews and local insights to find what is right for you.</p>
+            <div class="swiper">
+                <ul class=" swiper-wrapper lista-casas">
+    
+                </ul>
+            </div>
+                <div class="swiper-button-next "></div>
+                <div class="swiper-button-prev "></div>
+                <div class="swiper-pagination"></div>
+            
        </section>
     </main>
-    <footer>
-        
-    </footer>
+    
+    
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper', {
+           slidesPerView: 4,
+           spaceBetween: 10,
+           grabCursor: true,
+                    slidesPerGroup: 1,
+                  loop: true,
+                  loopFillGroupWithBlank: false,
+                  navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                  },
+        });
+    </script>
+    
+
+
+
+
+
+<script type="module" src="./js/mostrarCasas.js"></script>
 <script src="https://kit.fontawesome.com/aec3432bb5.js" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+
+
+
+
+
 </body>
 </html>

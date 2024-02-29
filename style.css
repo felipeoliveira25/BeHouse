@@ -258,20 +258,56 @@ main{
     width: 90px;
     height: 20px;
 }
-.casa-lista button{
+.botoes-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.botao-comprar{
     border-radius: 14px;
     border: none;
     color: #ffffff;
     background-color: #3084b4;
     padding: 10px;
-    margin-bottom: 7px;
-    width: 70px;
+    width: 100px;
     cursor: pointer;
 }
-.casa-lista button:hover{
-    background-color: #1a648f
-    ;
+.botao-comprar:hover{
+    background-color: #1a648f;
 }
+
+.botao-compartilhar,
+.botao-salvar-inativo,
+.botao-salvar-ativo{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    
+    
+    
+}
+.botao-compartilhar i,
+.botao-salvar-inativo i,
+.botao-salvar-ativo i{
+    font-size: 20px;
+    color: #3084b4;
+    cursor: pointer;
+    fill: #000;
+    
+   
+}
+
+
+.hidden{
+    display: none;
+}
+
+
+
 
 .swiper{
     width: 60vw;

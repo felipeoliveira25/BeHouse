@@ -7,6 +7,9 @@
 html{
     scroll-behavior: smooth;
 }
+
+
+
 body{
     width: 100vw;
     height: 100vh;
@@ -24,7 +27,7 @@ header{
     justify-content: space-between;
     transition: all 0.5s;
     background-image: linear-gradient(to right, #1c313d, #19435e ); 
-    z-index: 3; 
+    z-index: 7; 
     
 }
 .header-logo a{
@@ -107,21 +110,26 @@ header{
     font-weight: 700;
     margin-bottom: 10px;
     border-bottom: 1px solid #19435e;
-    margin-left: -12px;
+    
     color:#07314b ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .dropdown-menu a{
     display: block;
     color: #07314b;
     font-weight: 500;
     padding-top: 6px;
-    margin-left: -15px;
+    
     text-decoration: none;
 }
 .dropdown-menu a:hover{
     color: #07314b;
     background-color: transparent;
     border-bottom: 1px solid #19435e;
+    
+    
 }
 .dropdown:hover .dropdown-menu{
     display: block;
@@ -244,12 +252,15 @@ main{
     transition: all 0.3s ease;
     
 }
+.casa-lista h3{
+    color: #1A3F56;
+}
 
 .casa-lista img{
     width: 100%;
     height: 150px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
 }
 .casa-lista p{
     display: flex;
@@ -257,13 +268,14 @@ main{
     align-items: center;
     width: 90px;
     height: 20px;
+    color: #636363;
 }
 .botoes-card{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
 }
 
 .botao-comprar{
@@ -278,7 +290,7 @@ main{
 .botao-comprar:hover{
     background-color: #1a648f;
 }
-
+.botao-mais-opcoes,
 .botao-compartilhar,
 .botao-salvar-inativo,
 .botao-salvar-ativo{
@@ -290,21 +302,28 @@ main{
     
     
 }
+.botao-mais-opcoes i,
 .botao-compartilhar i,
 .botao-salvar-inativo i,
 .botao-salvar-ativo i{
     font-size: 20px;
     color: #3084b4;
     cursor: pointer;
-    fill: #000;
+    
     
    
 }
 
-
-.hidden{
-    display: none;
+.botao-mais-opcoes i{
+    position: absolute;
+    top: 160px;
+    right: 15px;
+    font-size: 25px;
+    color: #636363;
 }
+
+
+
 
 
 
@@ -335,4 +354,121 @@ main{
 .swiper-button-next:hover, .swiper-button-prev:hover{
     opacity: 1;
     color: #0b4a6e;
+}
+
+.form-adicionar-casa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0 0 -200px ;
+    z-index: 7;
+    border-radius: 19px;
+    background: rgba(124, 124, 124, 0.35);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+.form-adicionar-casa button{
+    border: none;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: transparent;
+    position: absolute;
+    top: 18px;
+    right: 29px;
+    color: #f5f4f4;
+    cursor: pointer;
+}
+.form-adicionar-casa button:hover{
+    color: #a1a2a3;
+}
+.form-adicionar-casa h2{
+   margin-bottom: 40px;
+   color: #f5f4f4;
+   font-weight: 600;
+}
+#input-imagem,
+#input-titulo,
+#input-preco{
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    height: 30px;
+    width: 260px;
+    color: #19435e;
+    font-family: 
+    'Poppins', serif; 
+    font-weight: 700;
+
+
+}
+#input-enviar{
+    margin-top: 60px;
+    padding: 15px;
+    width: 150px;
+    border-radius: 36px;
+    border: none;
+    background-color: #092738;
+    color: #e7e7e7;
+    font-size: 17px;
+    font-family: 
+    'Poppins', serif; 
+
+}
+#input-enviar:hover{
+    background-color: #19435e;
+}
+#input-imagem,
+#input-titulo{
+    margin-bottom: 20px;
+}
+.form-adicionar-casa label{
+    position: relative;
+    right: 104px;
+    color: #e7e7e7;
+    font-family: 
+    'Poppins', serif; 
+}
+
+.hidden{
+    display: none;
+    
+}
+.hidden-body{
+    overflow-y: hidden;
+}
+
+.div-info-user{
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 300px;
+    right: 0;
+    top: 88px;
+    height: 600px;
+}
+.div-info-user ul{
+    display: flex;
+    flex-direction: column;
+}
+.div-info-user ul section{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }

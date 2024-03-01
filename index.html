@@ -10,128 +10,137 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <section class="header-itens-first" id="inicio"> <!--Seção para os itens da esquerda do header-->
-            <section class="header-logo"><!--Seção para a logo da loja-->
-                <a href="index.html"><span>Be</span>House</a>
+        <header>
+            <section class="header-itens-first" id="inicio"> <!--Seção para os itens da esquerda do header-->
+                <section class="header-logo"><!--Seção para a logo da loja-->
+                    <a href="index.html"><span>Be</span>House</a>
+                </section>
+                <section class="header-options"><!--Seção para os três primeiros itens da barra de navegação-->
+                    <ul class="header-options-list">
+                        <li class="header-options-list-item dropdown">
+                            <a href="#explore-buy" class="link-navbar">Buy</a>
+    
+                            <div class="dropdown-menu">
+                                <p><span>Recife - PE</span></p>
+                                <a href="#">Boa Viagem</a>
+                                <a href="#">Casa Forte</a>
+                                <a href="#">Madalena</a>
+                            </div>
+                        </li>
+                        <li class="header-options-list-item dropdown">
+                            <a href="#" class="link-navbar">Sold</a>
+    
+                            <div class="dropdown-menu">
+                                <p><span>Recife - PE</span></p>
+                                <a href="#">Sold 1</a>
+                                <a href="#">Sold 2</a>
+                                <a href="#">Sold 3 </a>
+                            </div>
+                        </li>
+                        <li class="header-options-list-item">
+                            <a href="" class="link-navbar">Saved Homes</a>
+                        </li>
+                    </ul>
+                </section>
             </section>
-            <section class="header-options"><!--Seção para os três primeiros itens da barra de navegação-->
-                <ul class="header-options-list">
-                    <li class="header-options-list-item dropdown">
-                        <a href="#explore-buy" class="link-navbar">Buy</a>
-
-                        <div class="dropdown-menu">
-                            <p><span>Recife - PE</span></p>
-                            <a href="#">Buy 1</a>
-                            <a href="#">Buy 2</a>
-                            <a href="#">Buy3 </a>
-                        </div>
-                    </li>
-                    <li class="header-options-list-item dropdown">
-                        <a href="" class="link-navbar">Rent</a>
-
-                        <div class="dropdown-menu">
-                            <p><span>Recife - PE</span></p>
-                            <a href="#">Rent 1</a>
-                            <a href="#">Rent 2</a>
-                            <a href="#">Rent 3 </a>
-                        </div>
-                    </li>
-                    <li class="header-options-list-item dropdown">
-                        <a href="#" class="link-navbar">Sold</a>
-
-                        <div class="dropdown-menu">
-                            <p><span>Recife - PE</span></p>
-                            <a href="#">Sold 1</a>
-                            <a href="#">Sold 2</a>
-                            <a href="#">Sold 3 </a>
-                        </div>
-                    </li>
-                </ul>
+    
+            <section class="header-itens-second"> <!--Seção para os itens da direita do header-->
+                <section class="header-options"> <!--Seção para os três últimos itens da barra de navegação-->
+                    <ul class="header-options-list">
+                        <li class="header-options-list-item">
+                            <a href="" class="link-navbar" data-adicionar>Add Home</a>
+                        </li>
+                        <li class="header-options-list-item">
+                            <a href="" class="link-navbar"><i class="fa-regular fa-user"></i></a>
+                        </li>
+                    </ul>
+                </section>
             </section>
-        </section>
-
-        <section class="header-itens-second"> <!--Seção para os itens da direita do header-->
-            <section class="header-options"> <!--Seção para os três últimos itens da barra de navegação-->
-                <ul class="header-options-list">
-                    <li class="header-options-list-item">
-                        <a href="" class="link-navbar">Saved Homes</a>
-                    </li>
-                    <li class="header-options-list-item">
-                        <a href="" class="link-navbar add">Add Home</a>
-                    </li>
-                    <li class="header-options-list-item">
-                        <a href="" class="link-navbar"><i class="fa-regular fa-user"></i></a>
-                    </li>
-                </ul>
-            </section>
-        </section>
-        <div class="menu-hamburguer"> <!--Menu hamburguer. Para a parte responsiva da aplicação-->
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </header>
-
-    <main>
-        <!--Parte inicial do main, com a barra de pesquisa com as cidades onde estrão as casas-->
-       <section class="initial-img">
-            <img src="./images/casas-bonitas.jpg" alt="">
-            <h1>Fulfill your dream of having a home, where every dawn is a promise of endless possibilities.</h1>
-            <section class="barra-pesquisa-localizacao">
-                <input type="text" class="input-busca-localizacao" placeholder="Recife - PE">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </section>
-       </section>
-       
-       <!--Parte para explorar as casas presentes no site-->
-       <section class="explore-homes" id="explore-buy" >
-            <h2>Explore homes on BeHouse</h2>
-            <p>Take a deep dive and browse homes for sale, original neighborhood photos, resident reviews and local insights to find what is right for you.</p>
-            <div class="swiper">
-                <ul class=" swiper-wrapper lista-casas">
-                    
-                </ul>
+            <div class="menu-hamburguer"> <!--Menu hamburguer. Para a parte responsiva da aplicação-->
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-                <div class="swiper-button-next "></div>
-                <div class="swiper-button-prev "></div>
-                <div class="swiper-pagination"></div>
-            
-       </section>
-    </main>
+        </header>
     
+        <main>
+            <!--Parte inicial do main, com a barra de pesquisa com as cidades onde estrão as casas-->
+           <section class="initial-img">
+                <img src="./images/casas-bonitas.jpg" alt="">
+                <h1>Fulfill your dream of having a home, where every dawn is a promise of endless possibilities.</h1>
+                <section class="barra-pesquisa-localizacao">
+                    <input type="text" class="input-busca-localizacao" placeholder="Recife - PE">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </section>
+           </section>
+           
+           <!--Parte para explorar as casas presentes no site-->
+           <section class="explore-homes" id="explore-buy" >
+                <h2>Explore homes on BeHouse</h2>
+                <p>Take a deep dive and browse homes for sale, original neighborhood photos, resident reviews and local insights to find what is right for you.</p>
+                <div class="swiper">
+                    <ul class=" swiper-wrapper lista-casas">
+                        
+                    </ul>
+                </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                
+           </section>
     
+           <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
-
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script>
-        var swiper = new Swiper('.swiper', {
-           slidesPerView: 4,
-           spaceBetween: 10,
-           grabCursor: true,
-                    slidesPerGroup: 1,
-                  loop: true,
-                  loopFillGroupWithBlank: false,
-                  navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                  },
-        });
-    </script>
+           <script>
+               var swiper = new Swiper('.swiper', {
+                  slidesPerView: 4,
+                  spaceBetween: 10,
+                  grabCursor: true,
+                           slidesPerGroup: 1,
+                         loop: true,
+                         loopFillGroupWithBlank: false,
+                         navigation: {
+                           nextEl: ".swiper-button-next",
+                           prevEl: ".swiper-button-prev",
+                         },
+               });
+           </script>
+            <form class="form-adicionar-casa hidden">
+                <button class="fechar-form">X</button>
+                <h2>Informações da Casa</h2>
+                <label for="#input-imagem">Link</label>
+                <input type="text" name="imagem" id="input-imagem" required data-imagem>
+                
+                <label for="#input-titulo">Título</label>
+                <input type="text" name="titulo" id="input-titulo" required data-titulo>
     
+                <label for="">Preço</label>
+                <input type="text" name="preco" id="input-preco" required data-preco>
 
+                <input type="submit" value="Enviar" id="input-enviar">
+           </form>
 
-
-
+           <div class="div-info-user">
+                <ul>
+                    <section class="div-info-user-item">
+                        <li>Settings</li>
+                        <i class="fa-solid fa-gear"></i>
+                    </section>
+                    <section class="div-info-user-item">
+                        <li>My houses</li>
+                        <i class="fa-solid fa-gear"></i>
+                    </section>
+                    <section class="div-info-user-item">
+                        <li>Sign out</li>
+                        <i class="fa-solid fa-gear"></i>
+                    </section>
+                </ul>
+           </div>
+          
+        </main>
 
 <script type="module" src="./js/mostrarCasas.js"></script>
+<script type="module" src="./js/adicionarCasa.js"></script>
 <script src="https://kit.fontawesome.com/aec3432bb5.js" crossorigin="anonymous"></script>
-
-
-
-
-
 </body>
 </html>

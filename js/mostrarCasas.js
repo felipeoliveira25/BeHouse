@@ -56,7 +56,3 @@ async function listaCasas(){
 }
 
 listaCasas();
-
-
-
-

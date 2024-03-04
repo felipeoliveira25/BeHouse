@@ -1,58 +1,53 @@
 {
   "casas-comprar": [
     {
-      "id": 1,
+      "id": "1",
       "imagem": "https://www.trulia.com/pictures/thumbs_4/zillowstatic/fp/8a4acd8e8c92fed2f349404006d25635-full.webp",
       "titulo": "Recife, PE",
       "preco": "R$274.000"
     },
     {
-      "id": 2,
+      "id": "2",
       "imagem": "https://www.trulia.com/pictures/thumbs_3/zillowstatic/fp/3011f678bfc44eed6bc08ca804fd19a9-full.webp",
       "titulo": "Recife, PE",
       "preco": "R$580.000"
     },
     {
-      "id": 3,
+      "id": "3",
       "imagem": "https://www.trulia.com/pictures/thumbs_3/zillowstatic/fp/baaca6ce1ca0c8d032e7d82fc7ec85ef-full.webp",
       "titulo": "Recife, PE",
       "preco": "R$720.000"
     },
     {
-      "id": 4,
+      "id": "4",
       "imagem": "https://www.trulia.com/pictures/thumbs_4/zillowstatic/fp/34ae800024b2e909058320e480f164e9-full.webp",
       "titulo": "Recife, PE",
       "preco": "R$350.000"
     },
     {
-      "id": 5,
+      "id": "5",
       "imagem": "https://www.trulia.com/pictures/thumbs_4/zillowstatic/fp/c6aaa169cdcf1cfa9f5f3510289b88ec-full.webp",
       "titulo": "Recife, PE",
       "preco": "R$465.000"
     },
     {
-      "id": 6,
+      "id": "6",
       "imagem": "https://www.trulia.com/pictures/thumbs_4/zillowstatic/fp/852aa974ec216e18e7130230bc38b0f9-full.webp",
       "titulo": "Recife, PE",
       "preco": "R$180.000"
     },
     {
-      "id": 7,
+      "id": "7",
       "imagem": "https://www.trulia.com/pictures/thumbs_4/zillowstatic/fp/49e007f0e86cc7ac738a32d3fd844141-full.webp",
       "titulo": "Recife, PE",
       "preco": "R$890.000"
     },
     {
-      "id": 8,
+      "id": "8",
       "imagem": "https://www.trulia.com/pictures/thumbs_4/zillowstatic/fp/28cc355e334802cfaf72cf8fd599b1cc-full.webp",
       "titulo": "Recife, PE",
       "preco": "R$493.000"
-    },
-    {
-      "id": "083b",
-      "imagem": "https://www.trulia.com/pictures/thumbs_4/zillowstatic/fp/ed0f97b62594a628e79d930531f75d49-full.webp",
-      "titulo": "Casa do velho",
-      "preco": "R$800.000"
     }
+   
   ]
 }

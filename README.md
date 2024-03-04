@@ -14,11 +14,10 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [ ] Opção de salvar tarefa para ver depois
-- [ ] Opção de postar novas casas no site
+- [x] Opção de salvar tarefa para ver depois
+- [x] Opção de postar novas casas no site
 - [ ] Tornar a página responsiva
-- [ ] Tarefa 4
-- [ ] Tarefa 5
+
 
 ## 💻 Pré-requisitos
 
